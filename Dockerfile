@@ -29,7 +29,7 @@ RUN strip -s /home/rest_server/target/x86_64-unknown-linux-musl/release/rustapo
 
 FROM scratch as final
 
-EXPOSE 8288
+EXPOSE 8388
 
 # Import from builder.
 COPY --from=builder /etc/passwd /etc/passwd
